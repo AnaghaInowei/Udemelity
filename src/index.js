@@ -45,12 +45,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
       navLinks.forEach(link => {
         link.classList.remove('text-gray-50');
-        link.classList.add('text-slate-950');
+        link.classList.add('text-gray-900');
       });
 
       if (brandHeading) {
         brandHeading.classList.remove('text-gray-50');
-        brandHeading.classList.add('text-slate-950');
+        brandHeading.classList.add('text-gray-900');
       }
 
       if (mobileToggleIcon) {
@@ -64,12 +64,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
       navLinks.forEach(link => {
         link.classList.add('text-gray-50');
-        link.classList.remove('text-slate-950');
+        link.classList.remove('text-gray-900');
       });
 
       if (brandHeading) {
         brandHeading.classList.add('text-gray-50');
-        brandHeading.classList.remove('text-slate-950');
+        brandHeading.classList.remove('text-gray-900');
       }
 
       if (mobileToggleIcon) {
