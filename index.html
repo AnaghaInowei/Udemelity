@@ -25,7 +25,7 @@
   <body>
     <!-- Navigation / Header -->
     <nav
-      class="fixed w-full p-5 bg-transparent md:flex md:justify-between md:items-center shadow-md z-10 backdrop-blur-sm"
+      class="fixed w-full px-5 py-1 bg-transparent md:flex md:justify-between md:items-center shadow-md z-10 backdrop-blur-sm"
     >
       <div class="flex justify-between items-center">
         <!-- Logo and brand -->
@@ -54,27 +54,27 @@
         >
           <!-- Primary nav items -->
           <li class="mx-4 my-6 md:my-0">
-            <a href="#hero" class="text-xl text-gray-50 hover:text-red-600 duration-500"
+            <a href="#hero" class="text-sm text-gray-50 hover:text-red-600 duration-500"
               >Home</a
             >
           </li>
           <li class="mx-4 my-6 md:my-0">
-            <a href="#service" class="text-xl text-gray-50 hover:text-red-600 duration-500"
+            <a href="#service" class="text-sm text-gray-50 hover:text-red-600 duration-500"
               >Services</a
             >
           </li>
           <li class="mx-4 my-6 md:my-0">
-            <a href="#about" class="text-xl text-gray-50 hover:text-red-600 duration-500"
+            <a href="#about" class="text-sm text-gray-50 hover:text-red-600 duration-500"
               >About</a
             >
           </li>
           <li class="mx-4 my-6 md:my-0">
-            <a href="#projects" class="text-xl text-gray-50 hover:text-red-600 duration-500"
+            <a href="#projects" class="text-sm text-gray-50 hover:text-red-600 duration-500"
               >Projects</a
             >
           </li>
           <li class="mx-4 my-6 md:my-0">
-            <a href="#contact" class="text-xl text-gray-50 hover:text-red-600 duration-500"
+            <a href="#contact" class="text-sm text-gray-50 hover:text-red-600 duration-500"
               >Contact</a
             >
           </li>
@@ -121,7 +121,7 @@
           <button
             class="font-bold bg-red-600 text-gray-50 px-6 py-2 rounded hover:bg-red-700 duration-500 flex justify-center items-center text-center w-full hover:translate-0.5 md:w-auto cursor-pointer"
           >
-            <a href="#">Get a free Quote</a>
+            <a href="#contact">Get a free Quote</a>
             <span class="ml-2"
               ><img src="./src/assets/Frame.svg" alt="Arrow"
             /></span>
@@ -129,7 +129,7 @@
           <button
             class="bg-gray-50 text-slate-950 font-bold px-6 py-2 rounded duration-500 flex justify-center items-center gap-5 text-center w-full hover:bg-slate-950 hover:text-gray-50 md:w-auto cursor-pointer"
           >
-            <a href="#" class="text-inherit">Our Services</a>
+            <a href="#service" class="text-inherit">Our Services</a>
           </button>
         </div>
       </div>
@@ -625,7 +625,7 @@
               name="name"
               placeholder="John Doe"
               required=""
-              class="p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
+              class="p-2 rounded-md border ring-gray-300  focus:outline-none focus:ring-2 focus:ring-red-600"
             />
             <label for="email">Your Email</label>
             <input
@@ -633,7 +633,7 @@
               name="email"
               placeholder="johndoe@gmail.com"
               required=""
-              class="p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
+              class="p-2 rounded-md border ring-gray-300 focus:outline-none focus:ring-2 focus:ring-red-600"
             />
             <label for="phone">Phone Number</label>
             <input
@@ -641,31 +641,31 @@
               name="phone"
               placeholder="Your Phone Number"
               required=""
-              class="p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
+              class="p-2 rounded-md border ring-gray-300 focus:outline-none focus:ring-2 focus:ring-red-600"
             />
 
             <label for="service">Service Needed</label>
             <select name="service" id="service">
               <option value="0"></option>
-              <option value="1">Domestic Installation</option>
-              <option value="2">Industrial Installation</option>
-              <option value="3">Electrical Troubleshooting</option>
-              <option value="4">Earthing &amp; Lightning Protection</option>
-              <option value="5">Electrical Maintenance</option>
-              <option value="6">Energy Management</option>
-              <option value="7">Lighting &amp; Power</option>
-              <option value="8">Procurement</option>
-              <option value="9">Project Management</option>
-              <option value="10">Extra Low Voltage Installations</option>
-              <option value="11">General Contract</option>
-              <option value="12">Commercial Installation</option>
+              <option value="Domestic Installation">Domestic Installation</option>
+              <option value="Industrial Installation">Industrial Installation</option>
+              <option value="Electrical Troubleshooting">Electrical Troubleshooting</option>
+              <option value="Earthing &amp; Lightning Protection">Earthing &amp; Lightning Protection</option>
+              <option value="Electrical Maintenance">Electrical Maintenance</option>
+              <option value="Energy Management">Energy Management</option>
+              <option value="Lighting &amp; Power">Lighting &amp; Power</option>
+              <option value="Procurement">Procurement</option>
+              <option value="Project Management">Project Management</option>
+              <option value="Extra Low Voltage Installations">Extra Low Voltage Installations</option>
+              <option value="General Contract">General Contract</option>
+              <option value="Commercial Installation">Commercial Installation</option>
             </select>
             <textarea
               name="message"
               rows="4"
               placeholder="Please describe what you need"
               required=""
-              class="p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
+              class="p-2 rounded-md border ring-gray-300 focus:outline-none focus:ring-2 focus:ring-red-600"
             ></textarea>
             <button
               type="submit"
