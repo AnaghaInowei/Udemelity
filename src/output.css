@@ -906,6 +906,53 @@
 html {
   scroll-behavior: smooth;
 }
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.slide-in-left {
+  animation: slideInFromLeft 0.8s ease-out forwards;
+}
+.slide-in-left-on-scroll {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.slide-in-left-on-scroll.animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+.slide-in-right-on-scroll {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.slide-in-right-on-scroll.animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+@keyframes text-appear {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.autoshow {
+  animation-name: text-appear;
+  animation-timeline: view();
+  animation-fill-mode: both;
+  animation-range: entry 20% cover 100%;
+}
 @property --tw-translate-x {
   syntax: "*";
   inherits: false;

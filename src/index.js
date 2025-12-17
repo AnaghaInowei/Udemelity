@@ -123,6 +123,32 @@ document.addEventListener('DOMContentLoaded', () => {
     submitBtn.textContent = 'Submit';
     submitBtn.disabled = false;
   });
+
+  // Scroll-triggered animations
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate');
+        // Unobserve after animation to prevent re-triggering
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  // Observe elements with slide-in-left-on-scroll class
+  document.querySelectorAll('.slide-in-left-on-scroll').forEach(el => {
+    observer.observe(el);
+  });
+
+  // Observe elements with slide-in-right-on-scroll class
+  document.querySelectorAll('.slide-in-right-on-scroll').forEach(el => {
+    observer.observe(el);
+  });
 });
 
 // import { Application } from '@splinetool/runtime';
