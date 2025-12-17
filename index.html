@@ -25,17 +25,17 @@
   <body>
     <!-- Navigation / Header -->
     <nav
-      class="fixed w-full p-5 bg-white md:flex md:justify-between md:items-center shadow-md z-10"
+      class="fixed w-full p-5 bg-transparent md:flex md:justify-between md:items-center shadow-md z-10"
     >
       <div class="flex justify-between items-center">
         <!-- Logo and brand -->
         <div class="flex flex-row justify-center items-center gap-2">
           <img
-            src="./src/assets/udeme-logo.png"
+            src="./src/assets/udeme-logo-removebg-preview.png"
             alt="Udemelity Logo"
-            class="cursor-pointer h-8 md:h-10"
+            class="cursor-pointer h-8 md:h-10 bg-gray-50 rounded-full"
           />
-          <h3 class="">
+          <h3 class="text-gray-50">
             Udemelity <span class="text-red-500">Electrical Services</span>
           </h3>
         </div>
@@ -50,31 +50,31 @@
       <!-- Navigation links (responsive) -->
       <div class="md:flex md:items-center">
         <ul
-          class="md:flex md:items-center z-50 md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-3.5 pr-3.5 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500"
+          class="md:flex md:items-center z-50 md:z-auto md:static absolute bg-inherit w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-3.5 pr-3.5 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500"
         >
           <!-- Primary nav items -->
           <li class="mx-4 my-6 md:my-0">
-            <a href="#hero" class="text-xl hover:text-red-600 duration-500"
+            <a href="#hero" class="text-xl text-gray-50 hover:text-red-600 duration-500"
               >Home</a
             >
           </li>
           <li class="mx-4 my-6 md:my-0">
-            <a href="#service" class="text-xl hover:text-red-600 duration-500"
+            <a href="#service" class="text-xl text-gray-50 hover:text-red-600 duration-500"
               >Services</a
             >
           </li>
           <li class="mx-4 my-6 md:my-0">
-            <a href="#about" class="text-xl hover:text-red-600 duration-500"
+            <a href="#about" class="text-xl text-gray-50 hover:text-red-600 duration-500"
               >About</a
             >
           </li>
           <li class="mx-4 my-6 md:my-0">
-            <a href="#projects" class="text-xl hover:text-red-600 duration-500"
+            <a href="#projects" class="text-xl text-gray-50 hover:text-red-600 duration-500"
               >Projects</a
             >
           </li>
           <li class="mx-4 my-6 md:my-0">
-            <a href="#contact" class="text-xl hover:text-red-600 duration-500"
+            <a href="#contact" class="text-xl text-gray-50 hover:text-red-600 duration-500"
               >Contact</a
             >
           </li>
@@ -94,14 +94,18 @@
     <!-- Hero section -->
     <section
       id="hero"
-      class="flex flex-col items-start text-left pt-10 pb-10 px-5 bg-cover bg-center md:items-start md:text-left"
+      class="flex flex-col items-start text-left pt-10 pb-10 px-5 bg-cover backdrop-blur-2xl bg-no-repeat bg-center md:items-start md:text-left"
       style="
         padding-top: 5rem;
         padding-bottom: 5rem;
-        background-image: url('./src/assets/background.jpg');
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)
+          ),
+          url('./src/assets/background.jpg');
       "
     >
-      <div class="w-full text-white mb-6" style="max-width: 50rem">
+      <div class="w-full text-gray-50 mb-6" style="max-width: 50rem">
         <div class="w-full flex flex-col items-start md:items-start">
           <h1 class="md:w-2/3 text-4xl md:text-6xl font-bold mb-4">
             Professional Electrical Services You Can Trust
@@ -115,7 +119,7 @@
         <!-- Hero CTAs -->
         <div class="mt-4 flex flex-col md:flex-row md:items-center gap-4">
           <button
-            class="font-bold bg-red-600 text-white px-6 py-2 rounded hover:bg-red-700 duration-500 flex justify-center items-center text-center w-full hover:translate-0.5 md:w-auto cursor-pointer"
+            class="font-bold bg-red-600 text-gray-50 px-6 py-2 rounded hover:bg-red-700 duration-500 flex justify-center items-center text-center w-full hover:translate-0.5 md:w-auto cursor-pointer"
           >
             <a href="#">Get a free Quote</a>
             <span class="ml-2"
@@ -123,7 +127,7 @@
             /></span>
           </button>
           <button
-            class="bg-white text-slate-950 font-bold px-6 py-2 rounded duration-500 flex justify-center items-center gap-5 text-center w-full hover:bg-slate-950 hover:text-white md:w-auto cursor-pointer"
+            class="bg-gray-50 text-slate-950 font-bold px-6 py-2 rounded duration-500 flex justify-center items-center gap-5 text-center w-full hover:bg-slate-950 hover:text-gray-50 md:w-auto cursor-pointer"
           >
             <a href="#" class="text-inherit">Our Services</a>
           </button>
@@ -153,7 +157,7 @@
       <div class="flex flex-wrap justify-center items-center gap-10 mt-10">
         <!-- Example card: Domestic Installation -->
         <div
-          class="flex flex-col items-center text-center justify-center bg-white p-5 rounded-lg shadow-md border-t-red-700 border-t-4 gap-5 hover:border-t-orange-500 hover:shadow-lg hover:translate-2.5 max-w-90 transition-all duration-300 card"
+          class="flex flex-col items-center text-center justify-center bg-gray-50 p-5 rounded-lg shadow-md border-t-red-700 border-t-4 gap-5 hover:border-t-orange-500 hover:shadow-lg hover:translate-2.5 max-w-90 transition-all duration-300 card"
         >
           <img
             src="./src/assets/domestic.png"
@@ -173,7 +177,7 @@
 
         <!-- Additional service cards (keep pattern for others) -->
         <div
-          class="flex flex-col items-center text-center justify-center bg-white p-5 rounded-lg shadow-md border-t-red-700 border-t-4 gap-5 hover:border-t-orange-500 hover:shadow-lg hover:translate-2.5 max-w-90 transition-all duration-300 card"
+          class="flex flex-col items-center text-center justify-center bg-gray-50 p-5 rounded-lg shadow-md border-t-red-700 border-t-4 gap-5 hover:border-t-orange-500 hover:shadow-lg hover:translate-2.5 max-w-90 transition-all duration-300 card"
         >
           <img
             src="./src/assets/commercial.png"
@@ -193,7 +197,7 @@
         </div>
 
         <div
-          class="flex flex-col items-center text-center justify-center bg-white p-5 rounded-lg shadow-md border-t-red-700 border-t-4 gap-5 hover:border-t-orange-500 hover:shadow-lg hover:translate-2.5 max-w-90 transition-all duration-300 card"
+          class="flex flex-col items-center text-center justify-center bg-gray-50 p-5 rounded-lg shadow-md border-t-red-700 border-t-4 gap-5 hover:border-t-orange-500 hover:shadow-lg hover:translate-2.5 max-w-90 transition-all duration-300 card"
         >
           <img
             src="./src/assets/industrial.png"
@@ -213,7 +217,7 @@
         </div>
 
         <div
-          class="flex flex-col items-center text-center justify-center bg-white p-5 rounded-lg shadow-md border-t-red-700 border-t-4 gap-5 hover:border-t-orange-500 hover:shadow-lg hover:translate-2.5 max-w-90 transition-all duration-300 card"
+          class="flex flex-col items-center text-center justify-center bg-gray-50 p-5 rounded-lg shadow-md border-t-red-700 border-t-4 gap-5 hover:border-t-orange-500 hover:shadow-lg hover:translate-2.5 max-w-90 transition-all duration-300 card"
         >
           <img
             src="./src/assets/troubleshooting.png"
@@ -232,7 +236,7 @@
         </div>
 
         <div
-          class="flex flex-col items-center text-center justify-center bg-white p-5 rounded-lg shadow-md border-t-red-700 border-t-4 gap-5 hover:border-t-orange-500 hover:shadow-lg hover:translate-2.5 max-w-90 transition-all duration-300 card"
+          class="flex flex-col items-center text-center justify-center bg-gray-50 p-5 rounded-lg shadow-md border-t-red-700 border-t-4 gap-5 hover:border-t-orange-500 hover:shadow-lg hover:translate-2.5 max-w-90 transition-all duration-300 card"
         >
           <img
             src="./src/assets/earthing.png"
@@ -252,7 +256,7 @@
         </div>
 
         <div
-          class="flex flex-col items-center text-center justify-center bg-white p-5 rounded-lg shadow-md border-t-red-700 border-t-4 gap-5 hover:border-t-orange-500 hover:shadow-lg hover:translate-2.5 max-w-90 transition-all duration-300 card"
+          class="flex flex-col items-center text-center justify-center bg-gray-50 p-5 rounded-lg shadow-md border-t-red-700 border-t-4 gap-5 hover:border-t-orange-500 hover:shadow-lg hover:translate-2.5 max-w-90 transition-all duration-300 card"
         >
           <!-- Maintenance service (no icon) -->
           <h2 class="font-bold text-2xl hover:text-red-600">
@@ -268,7 +272,7 @@
         </div>
 
         <div
-          class="flex flex-col items-center text-center justify-center bg-white p-5 rounded-lg shadow-md border-t-red-700 border-t-4 gap-5 hover:border-t-orange-500 hover:shadow-lg hover:translate-2.5 max-w-90 transition-all duration-300 card"
+          class="flex flex-col items-center text-center justify-center bg-gray-50 p-5 rounded-lg shadow-md border-t-red-700 border-t-4 gap-5 hover:border-t-orange-500 hover:shadow-lg hover:translate-2.5 max-w-90 transition-all duration-300 card"
         >
           <img
             src="./src/assets/energy.png"
@@ -287,7 +291,7 @@
         </div>
 
         <div
-          class="flex flex-col items-center text-center justify-center bg-white p-5 rounded-lg shadow-md border-t-red-700 border-t-4 gap-5 hover:border-t-orange-500 hover:shadow-lg hover:translate-2.5 max-w-90 transition-all duration-300 card"
+          class="flex flex-col items-center text-center justify-center bg-gray-50 p-5 rounded-lg shadow-md border-t-red-700 border-t-4 gap-5 hover:border-t-orange-500 hover:shadow-lg hover:translate-2.5 max-w-90 transition-all duration-300 card"
         >
           <img
             src="./src/assets/lighting.png"
@@ -306,7 +310,7 @@
         </div>
 
         <div
-          class="flex flex-col items-center text-center justify-center bg-white p-5 rounded-lg shadow-md border-t-red-700 border-t-4 gap-5 hover:border-t-orange-500 hover:shadow-lg hover:translate-2.5 max-w-90 transition-all duration-300 card"
+          class="flex flex-col items-center text-center justify-center bg-gray-50 p-5 rounded-lg shadow-md border-t-red-700 border-t-4 gap-5 hover:border-t-orange-500 hover:shadow-lg hover:translate-2.5 max-w-90 transition-all duration-300 card"
         >
           <img src="./src/assets/procurment.png" alt="Procurement" width="40" />
           <h2 class="font-bold text-2xl hover:text-red-600">Procurement</h2>
@@ -319,7 +323,7 @@
         </div>
 
         <div
-          class="flex flex-col items-center text-center justify-center bg-white p-5 rounded-lg shadow-md border-t-red-700 border-t-4 gap-5 hover:border-t-orange-500 hover:shadow-lg hover:translate-2.5 max-w-90 transition-all duration-300 card"
+          class="flex flex-col items-center text-center justify-center bg-gray-50 p-5 rounded-lg shadow-md border-t-red-700 border-t-4 gap-5 hover:border-t-orange-500 hover:shadow-lg hover:translate-2.5 max-w-90 transition-all duration-300 card"
         >
           <img
             src="./src/assets/project.png"
@@ -338,7 +342,7 @@
         </div>
 
         <div
-          class="flex flex-col items-center text-center justify-center bg-white p-5 rounded-lg shadow-md border-t-red-700 border-t-4 gap-5 hover:border-t-orange-500 hover:shadow-lg hover:translate-2.5 max-w-90 transition-all duration-300 card"
+          class="flex flex-col items-center text-center justify-center bg-gray-50 p-5 rounded-lg shadow-md border-t-red-700 border-t-4 gap-5 hover:border-t-orange-500 hover:shadow-lg hover:translate-2.5 max-w-90 transition-all duration-300 card"
         >
           <img
             src="./src/assets/low-voltage.png"
@@ -357,7 +361,7 @@
         </div>
 
         <div
-          class="flex flex-col items-center text-center justify-center bg-white p-5 rounded-lg shadow-md border-t-red-700 border-t-4 gap-5 hover:border-t-orange-500 hover:shadow-lg hover:translate-2.5 max-w-90 transition-all duration-300 card"
+          class="flex flex-col items-center text-center justify-center bg-gray-50 p-5 rounded-lg shadow-md border-t-red-700 border-t-4 gap-5 hover:border-t-orange-500 hover:shadow-lg hover:translate-2.5 max-w-90 transition-all duration-300 card"
         >
           <!-- General Contract service (no icon) -->
           <h2 class="font-bold text-2xl hover:text-red-600">
@@ -372,7 +376,7 @@
         </div>
 
         <!-- Training promo card -->
-        <div class="bg-slate-950 text-white p-5 rounded-xl hover:bg-slate-700">
+        <div class="bg-slate-950 text-gray-50 p-5 rounded-xl hover:bg-slate-700">
           <h3 class="font-bold text-2xl mb-2">
             Professional Training Available
           </h3>
@@ -444,7 +448,7 @@
 
         <button
           type="button"
-          class="bg-red-600 text-white px-5 py-2 rounded hover:bg-red-700 duration-500 flex justify-center items-center gap-1 cursor-pointer"
+          class="bg-red-600 text-gray-50 px-5 py-2 rounded hover:bg-red-700 duration-500 flex justify-center items-center gap-1 cursor-pointer"
         >
           <a href="tel:+2349079514121">Contact us Today</a>
         </button>
@@ -475,8 +479,8 @@
       <div
         class="flex flex-col justify-center items-center gap-5 text-center py-10 px-5"
       >
-        <h3 class="font-bold text-white text-2xl">Our Projects</h3>
-        <p class="text-white">
+        <h3 class="font-bold text-gray-50 text-2xl">Our Projects</h3>
+        <p class="text-gray-50">
           Take a look at some of our recent electrical installation projects
           across various sectors.
         </p>
@@ -486,7 +490,7 @@
       <div class="flex flex-wrap justify-center items-center gap-10 px-5 pb-10 horizontal-scroll-wrapper">
         <!-- Repeatable project card -->
         <div
-          class="flex flex-col justify-center items-center text-white bg-slate-800 rounded-lg shadow-md border-b-red-700 border-b-5 gap-5 hover:border-b-orange-500 hover:shadow-lg hover:translate-2.5 hover:shadow-yellow-600 transition-all duration-300 mb-5 pane"
+          class="flex flex-col justify-center items-center text-gray-50 bg-slate-800 rounded-lg shadow-md border-b-red-700 border-b-5 gap-5 hover:border-b-orange-500 hover:shadow-lg hover:translate-2.5 hover:shadow-yellow-600 transition-all duration-300 mb-5 pane"
           style="max-width: 20rem"
         >
           <img
@@ -507,7 +511,7 @@
 
         <!-- Additional project cards (duplicate content) -->
         <div
-          class="pane flex flex-col justify-center items-center text-white bg-slate-800 rounded-lg shadow-md border-b-red-700 border-b-5 gap-5 hover:border-b-orange-500 hover:shadow-lg hover:translate-2.5 hover:shadow-yellow-600 transition-all duration-300 mb-5"
+          class="pane flex flex-col justify-center items-center text-gray-50 bg-slate-800 rounded-lg shadow-md border-b-red-700 border-b-5 gap-5 hover:border-b-orange-500 hover:shadow-lg hover:translate-2.5 hover:shadow-yellow-600 transition-all duration-300 mb-5"
           style="max-width: 20rem"
         >
           <img
@@ -527,7 +531,7 @@
         </div>
 
         <div
-          class="pane flex flex-col justify-center items-center text-white bg-slate-800 rounded-lg shadow-md border-b-red-700 border-b-5 gap-5 hover:border-b-orange-500 hover:shadow-lg hover:translate-2.5 hover:shadow-yellow-600 transition-all duration-300 mb-5"
+          class="pane flex flex-col justify-center items-center text-gray-50 bg-slate-800 rounded-lg shadow-md border-b-red-700 border-b-5 gap-5 hover:border-b-orange-500 hover:shadow-lg hover:translate-2.5 hover:shadow-yellow-600 transition-all duration-300 mb-5"
           style="max-width: 20rem"
         >
           <img
@@ -547,7 +551,7 @@
         </div>
 
         <div
-          class="pane flex flex-col justify-center items-center text-white bg-slate-800 rounded-lg shadow-md border-b-red-700 border-b-5 gap-5 hover:border-b-orange-500 hover:shadow-lg hover:translate-2.5 hover:shadow-yellow-600 transition-all duration-300 mb-5"
+          class="pane flex flex-col justify-center items-center text-gray-50 bg-slate-800 rounded-lg shadow-md border-b-red-700 border-b-5 gap-5 hover:border-b-orange-500 hover:shadow-lg hover:translate-2.5 hover:shadow-yellow-600 transition-all duration-300 mb-5"
           style="max-width: 20rem"
         >
           <img
@@ -567,7 +571,7 @@
         </div>
 
         <div
-          class="pane flex flex-col justify-center items-center text-white bg-slate-800 rounded-lg shadow-md border-b-red-700 border-b-5 gap-5 hover:border-b-orange-500 hover:shadow-lg hover:translate-2.5 hover:shadow-yellow-600 transition-all duration-300 mb-5"
+          class="pane flex flex-col justify-center items-center text-gray-50 bg-slate-800 rounded-lg shadow-md border-b-red-700 border-b-5 gap-5 hover:border-b-orange-500 hover:shadow-lg hover:translate-2.5 hover:shadow-yellow-600 transition-all duration-300 mb-5"
           style="max-width: 20rem"
         >
           <img
@@ -589,7 +593,7 @@
 
       <!-- CTA for discussing projects -->
       <div
-        class="bg-white text-slate-950 text-2xl p-5 hover:translate-1.5 border-white rounded-xl mb-10 hover:bg-slate-200 hover:scale-1.05 transition-all duration-300"
+        class="bg-gray-50 text-slate-950 text-2xl p-5 hover:translate-1.5 border-gray-50 rounded-xl mb-10 hover:bg-slate-200 hover:scale-1.05 transition-all duration-300"
       >
         <a href="#">Discuss your Project with us</a>
       </div>
@@ -611,7 +615,7 @@
           <!-- Contact form -->
           <form
             id="contact-form"
-            class="flex flex-col gap-4 w-full bg-white p-6 rounded-md shadow-md"
+            class="flex flex-col gap-4 w-full bg-gray-50 p-6 rounded-md shadow-md"
           >
             <h3 class="font-bold text-2xl">Contact Form</h3>
 
@@ -665,7 +669,7 @@
             ></textarea>
             <button
               type="submit"
-              class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 duration-500 flex justify-center items-center gap-1 w-full cursor-pointer"
+              class="bg-red-600 text-gray-50 px-4 py-2 rounded hover:bg-red-700 duration-500 flex justify-center items-center gap-1 w-full cursor-pointer"
             >
               Send Message
             </button>
@@ -677,7 +681,7 @@
         <div class="flex flex-col justify-center items-start gap-5 md:w-1/2">
           <!-- Contact details card -->
           <div
-            class="flex flex-col justify-center items-start gap-3 bg-slate-950 text-left text-white rounded-md p-2 md:p-6 w-full mb-5"
+            class="flex flex-col justify-center items-start gap-3 bg-slate-950 text-left text-gray-50 rounded-md p-2 md:p-6 w-full mb-5"
           >
             <h3>Contact Information</h3>
             <div class="   ">
@@ -700,12 +704,12 @@
                 <div>
                   <!-- Phone numbers (clickable) -->
                   <p class="m-0">
-                    <a href="tel:+2348162782796" class="text-white"
+                    <a href="tel:+2348162782796" class="text-gray-50"
                       >08162782796</a
                     >
                   </p>
                   <p class="m-0">
-                    <a href="tel:+2348028472912" class="text-white"
+                    <a href="tel:+2348028472912" class="text-gray-50"
                       >08028472912</a
                     >
                   </p>
@@ -721,7 +725,7 @@
                   Email:
                   <a
                     href="mailto:Udemilityelectrical@gmail.com"
-                    class="text-white"
+                    class="text-gray-50"
                     >Udemilityelectrical@gmail.com</a
                   >
                 </p>

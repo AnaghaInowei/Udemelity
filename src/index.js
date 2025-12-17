@@ -1,21 +1,4 @@
-// function Menu(e) {
-//     // target the nav's immediate ul to avoid matching other lists
-//     const list = document.querySelector('nav > div > ul') || document.querySelector('nav ul');
-//     if (!list) return;
 
-//     // compiled CSS contains utilities named top-[80px] and top-[-400px]
-//     if (e.name === 'menu') {
-//         e.name = 'close';
-//         list.classList.remove('top-[-400px]');
-//         list.classList.add('top-[80px]');
-//         list.classList.add('opacity-100');
-//     } else {
-//         e.name = 'menu';
-//         list.classList.remove('top-[80px]');
-//         list.classList.add('top-[-400px]');
-//         list.classList.remove('opacity-100');
-//     }
-// }
 
 function Menu(e) {
   const list = document.querySelector('nav > div > ul') || document.querySelector('nav ul');
@@ -44,6 +27,52 @@ document.querySelectorAll('nav ul li a').forEach(link => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
+  // Navbar scroll behavior
+  const nav = document.querySelector('nav');
+  const navLinks = document.querySelectorAll('nav ul li a');
+  const brandHeading = document.querySelector('nav h3');
+
+  const handleScroll = () => {
+    if (!nav) return;
+
+    const scrolled = window.scrollY > 10;
+
+    if (scrolled) {
+      // When scrolling: solid light background
+      nav.classList.remove('bg-transparent');
+      nav.classList.add('bg-gray-50');
+
+      navLinks.forEach(link => {
+        link.classList.remove('text-gray-50');
+        link.classList.add('text-slate-950');
+      });
+
+      if (brandHeading) {
+        brandHeading.classList.remove('text-gray-50');
+        brandHeading.classList.add('text-slate-950');
+      }
+    } else {
+      // At top: transparent over hero
+      nav.classList.add('bg-transparent');
+      nav.classList.remove('bg-gray-50');
+
+      navLinks.forEach(link => {
+        link.classList.add('text-gray-50');
+        link.classList.remove('text-slate-950');
+      });
+
+      if (brandHeading) {
+        brandHeading.classList.add('text-gray-50');
+        brandHeading.classList.remove('text-slate-950');
+      }
+    }
+  };
+
+  // Run once on load and then on scroll
+  handleScroll();
+  window.addEventListener('scroll', handleScroll);
+
+  // Contact form handling
   const form = document.getElementById('contact-form');
   const submitBtn = form.querySelector('button[type="submit"]');
   const formspreeURL = 'https://formspree.io/f/xgvpokpa'; // replace with your Formspree URL
@@ -85,3 +114,8 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+// import { Application } from '@splinetool/runtime';
+
+// const canvas = document.getElementById('canvas3d');
+// const app = new Application(canvas);
+// app.load('https://prod.spline.design/NjQiOmC6aGguUAh1/scene.splinecode');
