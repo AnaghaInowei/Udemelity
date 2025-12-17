@@ -31,6 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const nav = document.querySelector('nav');
   const navLinks = document.querySelectorAll('nav ul li a');
   const brandHeading = document.querySelector('nav h3');
+  const mobileToggleIcon = document.querySelector('nav ion-icon');
 
   const handleScroll = () => {
     if (!nav) return;
@@ -51,6 +52,11 @@ document.addEventListener('DOMContentLoaded', () => {
         brandHeading.classList.remove('text-gray-50');
         brandHeading.classList.add('text-slate-950');
       }
+
+      if (mobileToggleIcon) {
+        mobileToggleIcon.classList.remove('text-gray-50');
+        mobileToggleIcon.classList.add('text-gray-900');
+      }
     } else {
       // At top: transparent over hero
       nav.classList.add('bg-transparent');
@@ -64,6 +70,11 @@ document.addEventListener('DOMContentLoaded', () => {
       if (brandHeading) {
         brandHeading.classList.add('text-gray-50');
         brandHeading.classList.remove('text-slate-950');
+      }
+
+      if (mobileToggleIcon) {
+        mobileToggleIcon.classList.add('text-gray-50');
+        mobileToggleIcon.classList.remove('text-gray-900');
       }
     }
   };
