@@ -306,6 +306,9 @@
   .hidden {
     display: none;
   }
+  .inline {
+    display: inline;
+  }
   .h-5 {
     height: calc(var(--spacing) * 5);
   }
@@ -610,6 +613,9 @@
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
+  }
+  .\!text-gray-900 {
+    color: var(--color-gray-900) !important;
   }
   .text-amber-400 {
     color: var(--color-amber-400);
@@ -917,6 +923,11 @@
   .md\:text-gray-50 {
     @media (width >= 48rem) {
       color: var(--color-gray-50);
+    }
+  }
+  .md\:text-gray-900 {
+    @media (width >= 48rem) {
+      color: var(--color-gray-900);
     }
   }
   .md\:opacity-100 {

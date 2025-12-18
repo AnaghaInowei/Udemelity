@@ -37,6 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!nav) return;
 
     const scrolled = window.scrollY > 10;
+    const isDesktop = window.matchMedia('(min-width: 768px)').matches;
 
     if (scrolled) {
       // When scrolling: solid light background
@@ -44,8 +45,13 @@ document.addEventListener('DOMContentLoaded', () => {
       nav.classList.add('bg-gray-50');
 
       navLinks.forEach(link => {
-        link.classList.remove('text-gray-50');
-        link.classList.add('text-gray-900');
+        // Only change colors on desktop (md and above)
+        if (isDesktop) {
+          link.classList.remove('text-gray-50', 'md:text-gray-50');
+          link.classList.add('text-gray-900');
+          // Use inline style to ensure it overrides responsive classes
+          link.style.color = '#111827'; // gray-900
+        }
       });
 
       if (brandHeading) {
@@ -63,8 +69,18 @@ document.addEventListener('DOMContentLoaded', () => {
       nav.classList.remove('bg-gray-50');
 
       navLinks.forEach(link => {
-        link.classList.add('text-gray-50');
-        link.classList.remove('text-gray-900');
+        // Mobile: always gray-900, Desktop: gray-50 when at top
+        if (isDesktop) {
+          link.classList.add('text-gray-50', 'md:text-gray-50');
+          link.classList.remove('text-gray-900');
+          // Remove inline style to let CSS classes take over
+          link.style.color = '';
+        } else {
+          // Mobile: ensure it stays gray-900
+          link.classList.remove('text-gray-50');
+          link.classList.add('text-gray-900');
+          link.style.color = '#111827'; // gray-900
+        }
       });
 
       if (brandHeading) {
