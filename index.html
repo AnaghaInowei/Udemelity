@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="description" content="Udemility Electrical Services provides professional electrical installations, repairs, and maintenance for residential and commercial properties.">
+    <meta name="description" content="Udemility provides large-scale electrical engineering, power distribution, and compliance installations for contractors and government agencies. Request an estimate today.">
     <meta name="keywords" content="electrical services, electrician, electrical repairs, electrical installation, emergency electrician">
 
 
@@ -21,6 +21,37 @@
       href="./src/assets/udeme-logo.png"
       type="image/x-icon"
     />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+<style>
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Space Grotesk', sans-serif !important;
+  }
+  p {
+    font-family: 'Roboto', sans-serif !important;
+  }
+
+  /* Sections span full width (for backgrounds), but inner content is capped */
+  section > div,
+  footer > div {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Fixed nav needs left/transform to center — margin: auto won't work */
+  nav {
+    max-width: 1440px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+  }
+</style>
+
     <!-- Ionicons for icons (ESM & nomodule fallbacks) -->
     <script
       type="module"
@@ -93,7 +124,7 @@
           <button
             type="button"
             class="bg-red-600 text-white px-2 py-2 rounded hover:bg-red-700 duration-500 flex justify-center items-center gap-1 w-full cursor-pointer"
-          >
+          > 
             <img src="./src/assets/phone.svg" alt="Phone" />
             <a href="tel:+2349079514121">Call Now</a>
           </button>
@@ -117,12 +148,11 @@
     >
       <div class="w-full text-gray-50 mb-6 slide-in-left flex flex-col items-center md:items-center" >
         <div class="w-full flex flex-col items-start md:items-center">
-          <h1 class="md:w-2/3 text-4xl md:text-6xl font-bold mb-4 text-center">
-            Professional Electrical Services You Can Trust
+          <h1 class="md:w-2/3 text-4xl md:text-6xl font-bold mb-4 text-center" style="font-family: 'Space Grotesk', sans-serif;">
+           Precision Electrical Engineering for Commercial & Estate Developments
           </h1>
-          <p class="md:w-2/3 text-lg md:text-xl mb-6 text-center">
-            Providing top-quality domestic, commercial, and industrial
-            electrical installations with a focus on safety and reliabilty
+          <p class="md:w-2/3 text-lg md:text-xl mb-6 text-center" style="font-family: 'Roboto', sans-serif;">
+            Delivering safe, compliant, and scalable power distribution systems for contractors, architects, and private developers. Executed to rigorous industrial and public-sector standards
           </p>
         </div>
 
@@ -131,7 +161,7 @@
           <button
             class="font-bold bg-red-600 text-gray-50 px-6 py-2 rounded hover:bg-red-700 duration-500 flex justify-center items-center text-center w-full hover:translate-0.5 md:w-auto cursor-pointer"
           >
-            <a href="#contact">Get a free Quote</a>
+            <a href="#contact">Request a Project Estimate</a>
             <span class="ml-2"
               ><img src="./src/assets/Frame.svg" alt="Arrow"
             /></span>
@@ -139,11 +169,13 @@
           <button
             class="bg-gray-50 text-slate-950 font-bold px-6 py-2 rounded duration-500 flex justify-center items-center gap-5 text-center w-full hover:bg-slate-950 hover:text-gray-50 md:w-auto cursor-pointer"
           >
-            <a href="#service" class="text-inherit">Our Services</a>
+            <a href="#service" class="text-inherit">Explore our capabilities</a>
           </button>
         </div>
       </div>
     </section>
+
+
 
     <!-- Services overview -->
     <section
@@ -164,21 +196,21 @@
       </div>
 
       <!-- Services cards grid -->
-      <div class="flex flex-wrap justify-center items-center gap-10 mt-10">
+      <div class="flex flex-wrap justify-center items-center gap-10 mt-10 mb-10">
         <!-- Example card: Domestic Installation -->
         <div
           class="autoshow flex flex-col items-center text-center justify-center bg-gray-50 p-5 rounded-lg shadow-md border-t-red-700 border-t-4 gap-5 hover:border-t-orange-500 hover:shadow-lg hover:translate-2.5 max-w-90 transition-all duration-300 card"
         >
           <img
             src="./src/assets/domestic.png"
-            alt="Domestic Installation"
+            alt="Commercial & Office Infrastructure:"
             width="40"
           />
           <h2 class="font-bold text-2xl hover:text-red-600">
-            Domestic Installation
+            Commercial & Office Infrastructure:
           </h2>
           <p class="font-light">
-            Complete electrical solutions for homes and residential properties.
+            Complete electrical system installations for modern workspaces, retail complexes, and commercial buildings. We handle everything from complex lighting design to reliable power distribution networks.
           </p>
           
         </div>
@@ -189,15 +221,14 @@
         >
           <img
             src="./src/assets/commercial.png"
-            alt="Commercial Installation"
+            alt="Estate & Residential Developments:"
             width="40"
           />
           <h2 class="font-bold text-2xl hover:text-red-600">
-            Commercial Installation
+            Estate & Residential Developments:
           </h2>
           <p class="font-light">
-            Electrical systems for offices, retail spaces, and commercial
-            buildings.
+            End-to-end electrical contracting for estate builders and individual developers. We provide safe, scalable house wiring, domestic installations, and lighting systems that stand the test of time.
           </p>
           
         </div>
@@ -207,253 +238,113 @@
         >
           <img
             src="./src/assets/industrial.png"
-            alt="Industrial Installation"
+            alt="Specialized Systems & ELV:"
             width="40"
           />
           <h2 class="font-bold text-2xl hover:text-red-600">
-            Industrial Installation
+            Specialized Systems & ELV:
           </h2>
           <p class="font-light">
-            Heavy-duty electrical solutions for industrial facilities and
-            factories.
+            Advanced electrical protection and integration, including heavy-duty earthing, lightning protection, Extra Low Voltage (ELV) systems, and specialized industrial solutions.
           </p>
           
         </div>
-
-        <div
-          class="autoshow flex flex-col items-center text-center justify-center bg-gray-50 p-5 rounded-lg shadow-md border-t-red-700 border-t-4 gap-5 hover:border-t-orange-500 hover:shadow-lg hover:translate-2.5 max-w-90 transition-all duration-300 card"
-        >
-          <img
-            src="./src/assets/troubleshooting.png"
-            alt="Electrical Troubleshooting"
-            width="40"
-          />
-          <h2 class="font-bold text-2xl hover:text-red-600">
-            Electrical Troubleshooting
-          </h2>
-          <p class="font-light">
-            Diagnosing and fixing electrical problems quickly and efficiently.
-          </p>
-          
-        </div>
-
-        <div
-          class="autoshow flex flex-col items-center text-center justify-center bg-gray-50 p-5 rounded-lg shadow-md border-t-red-700 border-t-4 gap-5 hover:border-t-orange-500 hover:shadow-lg hover:translate-2.5 max-w-90 transition-all duration-300 card"
-        >
-          <img
-            src="./src/assets/earthing.png"
-            alt="Earthing & Lightning Protection"
-            width="40"
-          />
-          <h2 class="font-bold text-2xl hover:text-red-600">
-            Earthing & Lightning Protection
-          </h2>
-          <p class="font-light">
-            Safety systems to protect against electrical surges and lightning
-            strikes.
-          </p>
-          
-        </div>
-
-        <div
-          class="autoshow flex flex-col items-center text-center justify-center bg-gray-50 p-5 rounded-lg shadow-md border-t-red-700 border-t-4 gap-5 hover:border-t-orange-500 hover:shadow-lg hover:translate-2.5 max-w-90 transition-all duration-300 card"
-        >
-          <!-- Maintenance service (no icon) -->
-          <h2 class="font-bold text-2xl hover:text-red-600">
-            Electrical Maintenance
-          </h2>
-          <p class="font-light">
-            Regular servicing and maintenance to ensure your electrical systems
-            run smoothly.
-          </p>
-          
-        </div>
-
-        <div
-          class="autoshow flex flex-col items-center text-center justify-center bg-gray-50 p-5 rounded-lg shadow-md border-t-red-700 border-t-4 gap-5 hover:border-t-orange-500 hover:shadow-lg hover:translate-2.5 max-w-90 transition-all duration-300 card"
-        >
-          <img
-            src="./src/assets/energy.png"
-            alt="Energy Management"
-            width="40"
-          />
-          <h2 class="font-bold text-2xl hover:text-red-600">
-            Energy Management
-          </h2>
-          <p class="font-light">
-            Solutions to optimize and reduce energy consumption and costs.
-          </p>
-          
-        </div>
-
-        <div
-          class="autoshow flex flex-col items-center text-center justify-center bg-gray-50 p-5 rounded-lg shadow-md border-t-red-700 border-t-4 gap-5 hover:border-t-orange-500 hover:shadow-lg hover:translate-2.5 max-w-90 transition-all duration-300 card"
-        >
-          <img
-            src="./src/assets/lighting.png"
-            alt="Lighting & Power"
-            width="40"
-          />
-          <h2 class="font-bold text-2xl hover:text-red-600">
-            Lighting & Power
-          </h2>
-          <p class="font-light">
-            Comprehensive lighting design and power distribution solutions.
-          </p>
-          
-        </div>
-
-        <div
-          class="autoshow flex flex-col items-center text-center justify-center bg-gray-50 p-5 rounded-lg shadow-md border-t-red-700 border-t-4 gap-5 hover:border-t-orange-500 hover:shadow-lg hover:translate-2.5 max-w-90 transition-all duration-300 card"
-        >
-          <img src="./src/assets/procurment.png" alt="Procurement" width="40" />
-          <h2 class="font-bold text-2xl hover:text-red-600">Procurement</h2>
-          <p class="font-light">
-            Sourcing high-quality electrical equipment and components.
-          </p>
-          
-        </div>
-
-        <div
-          class="autoshow flex flex-col items-center text-center justify-center bg-gray-50 p-5 rounded-lg shadow-md border-t-red-700 border-t-4 gap-5 hover:border-t-orange-500 hover:shadow-lg hover:translate-2.5 max-w-90 transition-all duration-300 card"
-        >
-          <img
-            src="./src/assets/project.png"
-            alt="Project Management"
-            width="40"
-          />
-          <h2 class="font-bold text-2xl hover:text-red-600">
-            Project Management
-          </h2>
-          <p class="font-light">
-            End-to-end management of electrical projects of any scale.
-          </p>
-          
-        </div>
-
-        <div
-          class="autoshow flex flex-col items-center text-center justify-center bg-gray-50 p-5 rounded-lg shadow-md border-t-red-700 border-t-4 gap-5 hover:border-t-orange-500 hover:shadow-lg hover:translate-2.5 max-w-90 transition-all duration-300 card"
-        >
-          <img
-            src="./src/assets/low-voltage.png"
-            alt="Extra Low Voltage Installations"
-            width="40"
-          />
-          <h2 class="font-bold text-2xl hover:text-red-600">
-            Extra Low Voltage Installations
-          </h2>
-          <p class="font-light">
-            Specialized ELV systems for security, communications, and more.
-          </p>
-          
-        </div>
-
-        <div
-          class="autoshow flex flex-col items-center text-center justify-center bg-gray-50 p-5 rounded-lg shadow-md border-t-red-700 border-t-4 gap-5 hover:border-t-orange-500 hover:shadow-lg hover:translate-2.5 max-w-90 transition-all duration-300 card"
-        >
-          <!-- General Contract service (no icon) -->
-          <h2 class="font-bold text-2xl hover:text-red-600">
-            General Contract
-          </h2>
-          <p class="font-light">
-            Full-service electrical contracting for projects of all sizes.
-          </p>
-          
-        </div>
-
-        <!-- Training promo card -->
-        <div class="bg-slate-950 text-gray-50 p-5 rounded-xl hover:bg-slate-700">
-          <h3 class="font-bold text-2xl mb-2">
-            Professional Training Available
-          </h3>
-          <p>
-            We also offer standard electrical training programs for individuals
-            and organizations
-          </p>
-        </div>
-      </div>
     </section>
+
+    <!-- Why Us -->
+     <section class="flex flex-col items-center justify-center gap-5 mt-20 mb-20">
+      <h3 class="font-bold text-4xl p-5">Why Choose Udemility</h3>
+      <div class="flex flex-col  md:flex-row items-center justify-center gap-5 w-full mt-10">
+        <div class="flex flex-col items-center justify-start gap-5 max-w-md  max-h-md px-5">
+          <h4 class="font-bold text-3xl">Government-Trained Precision, Built for Private Enterprise </h4>
+        <p class="text-xl font-light">Led by Director Udeme Sunday, Udemility was founded on the rigorous safety, compliance, and technical protocols demanded by large-scale industrial and public-sector training. We bring this uncompromising tier of electrical engineering directly to commercial contractors, architects, and estate builders. From initial blueprint reviews to final power distribution, we ensure your infrastructure passes strict regulatory inspections the very first time.</p>
+        </div>
+        <div class="flex flex-col items-center justify-center gap-5 max-w-sm ">
+          <img src="./src/assets/Office-installation.jpeg" alt="" class="h-2/3 w-2/3 rounded-xl shadow-lg">
+        </div>
+        
+      </div>
+     </section>
 
     <!-- About / feature section -->
     <section
       id="about"
-      class="flex flex-col md:flex-row justify-center flex-wrap items-center gap-10 px-5 py-10"
+      class="w-full overflow-hidden"
+      style="background-color: #F8FAFC;"
     >
-      <div
-        class="slide-in-left-on-scroll flex flex-col justify-start items-start gap-5 max-w-md text-left"
-      >
+      <div class="flex flex-col justify-center items-center gap-10 px-5 py-10">
         <h3 class="text-2xl text-slate-950 font-bold">
-          About Udemility Electrical Services
-        </h3>
-        <p>
-          Udemility Electrical Services is a leading electrical installation
-          company dedicated to providing high-quality electrical solutions for
-          domestic, commercial, and industrial clients. With years of experience
-          and a team of skilled professionals, we deliver reliable and safe
-          electrical services.
-        </p>
-
-        <!-- Key features list -->
-        <ul
-          class="list-inside text-left mt-2 flex flex-col gap-2 pl-6"
-          style="list-style-image: url('./assets/checkbox.svg')"
+            About Udemility Electrical Services
+          </h3>
+       <div class="flex flex-col  md:flex-row justify-center items-center gap-5 w-full mt-10">
+         <div
+          class="slide-in-left-on-scroll flex flex-1 flex-col justify-start items-start gap-5 text-left"
         >
-          <li class="flex items-center gap-2">
-            <img
-              src="./src/assets/checkbox.svg"
-              alt="Checkbox"
-              class="w-5 h-5"
-            />
-            Licensed and certified electrical professionals
-          </li>
-          <li class="flex items-center gap-2">
-            <img
-              src="./src/assets/checkbox.svg"
-              alt="Checkbox"
-              class="w-5 h-5"
-            />
-            Adherence to safety standards and regulations
-          </li>
-          <li class="flex items-center gap-2">
-            <img
-              src="./src/assets/checkbox.svg"
-              alt="Checkbox"
-              class="w-5 h-5"
-            />
-            Quality workmanship and attention to detail
-          </li>
-          <li class="flex items-center gap-2">
-            <img
-              src="./src/assets/checkbox.svg"
-              alt="Checkbox"
-              class="w-5 h-5"
-            />
-            Timely project completion and professional service
-          </li>
-        </ul>
+          
+          <p>
+            Udemility Electrical Services is a leading electrical installation
+            company dedicated to providing high-quality electrical solutions for
+            domestic, commercial, and industrial clients. With years of experience
+            and a team of skilled professionals, we deliver reliable and safe
+            electrical services.
+          </p>
 
-        <button
-          type="button"
-          class="bg-red-600 text-gray-50 px-5 py-2 rounded hover:bg-red-700 duration-500 flex justify-center items-center gap-1 cursor-pointer"
-        >
-          <a href="tel:+2349079514121">Contact us Today</a>
-        </button>
-      </div>
+          <!-- Key features list -->
+          <ul
+            class="list-inside text-left mt-2 flex flex-col gap-2 pl-6"
+            style="list-style-image: url('./assets/checkbox.svg')"
+          >
+            <li class="flex items-center gap-2">
+              <img
+                src="./src/assets/checkbox.svg"
+                alt="Checkbox"
+                class="w-5 h-5"
+              />
+              Licensed and certified electrical professionals
+            </li>
+            <li class="flex items-center gap-2">
+              <img
+                src="./src/assets/checkbox.svg"
+                alt="Checkbox"
+                class="w-5 h-5"
+              />
+              Adherence to safety standards and regulations
+            </li>
+            <li class="flex items-center gap-2">
+              <img
+                src="./src/assets/checkbox.svg"
+                alt="Checkbox"
+                class="w-5 h-5"
+              />
+              Quality workmanship and attention to detail
+            </li>
+            <li class="flex items-center gap-2">
+              <img
+                src="./src/assets/checkbox.svg"
+                alt="Checkbox"
+                class="w-5 h-5"
+              />
+              Timely project completion and professional service
+            </li>
+          </ul>
 
-      <!-- Visual / flyer -->
-      <div class="slide-in-right-on-scroll relative flex justify-center items-center z-0">
-        <!-- Decorative background shapes -->
-        <div
-          class="absolute top-3 left-3 w-20 h-20 bg-yellow-400 rounded -translate-x-6 -translate-y-6 -z-10 pointer-events-none"
-        ></div>
-        <img
-          src="./src/assets/flyer.png"
-          alt="flyer image"
-          class="w-full max-w-md relative z-0"
-        />
-        <div
-          class="absolute bottom-3 right-3 w-20 h-20 bg-red-600 rounded translate-x-6 translate-y-6 -z-10 pointer-events-none"
-        ></div>
+          <button
+            type="button"
+            class="bg-red-600 text-gray-50 px-5 py-2 rounded hover:bg-red-700 duration-500 flex justify-center items-center gap-1 cursor-pointer"
+          >
+            <a href="tel:+2349079514121">Contact us Today</a>
+          </button>
+        </div>
+
+        <!-- Visual / flyer -->
+        <div class="slide-in-right-on-scroll relative flex-1 flex justify-center items-center z-0">
+          <img
+            src="./src/assets/flyer.png"
+            alt="flyer image"
+            class="max-w-md relative z-0"
+          />
+        </div>
+       </div>
       </div>
     </section>
 
@@ -793,7 +684,9 @@
       </div>
 
       <p class="font-extralight p-10">
-        © 2025 Udemility Electrical Services. All rights reserved.
+        &copy; <script>
+      document.write(new Date().getFullYear());
+   </script>  Udemility Electrical Services. All rights reserved.
       </p>
     </footer>
    
